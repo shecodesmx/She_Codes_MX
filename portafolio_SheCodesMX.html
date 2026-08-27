@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Codes MX | Creative Developer</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="She Codes MX - Creative Frontend & Mobile Developer. Transformo ideas en experiencias digitales modernas y funcionales.">
+    <meta name="keywords" content="desarrolladora frontend, desarrollo mobile, UI/UX, React, Flutter, México">
+    <meta name="author" content="She Codes MX">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="She Codes MX | Creative Developer">
+    <meta property="og:description" content="Creative Frontend & Mobile Developer. Construyendo experiencias digitales excepcionales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portafolio-ashy-tau.vercel.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Fonts y CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+        <header role="banner">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="She Codes MX - Inicio">
+                <i class="fas fa-code logo-icon" aria-hidden="true"></i>
+                <span>She Codes MX</span>
+            </a>
+
+            <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+                <a href="#home" class="active" data-i18n="nav.home">Inicio</a>
+                <a href="#about" data-i18n="nav.about">Sobre Mí</a>
+                <a href="#services" data-i18n="nav.services">Servicios</a>
+                <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+                <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="#contact" data-i18n="nav.contact">Contacto</a>
+            </nav>
+
+            <div class="header-controls">
+                <!-- Selector de idioma -->
+                <div class="lang-switcher" role="group" aria-label="Selector de idioma">
+                    <button class="lang-btn active" data-lang="es" aria-label="Español" aria-pressed="true">ES</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+                </div>
+                
+                <!-- Toggle tema -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
+                    <i class="fas fa-sun sun" aria-hidden="true"></i>
+                    <i class="fas fa-moon moon" aria-hidden="true"></i>
+                </button>
+                
+                <!-- Menú móvil -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- HERO SECTION                                                  -->
+    <!-- ============================================================ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <span data-i18n="hero.badge">Disponible para Trabajar</span>
+                </span>
+                
+                <h1 id="hero-title">She Codes MX</h1>
+                <h2 data-i18n="hero.title">Desarrolladora Frontend & Mobile Creativa</h2>
+                
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Diseño y desarrollo experiencias digitales modernas, funcionales y visualmente atractivas, 
+                    optimizadas para un rendimiento sólido en diversos dispositivos y plataformas.
+                </p>
+
+                <!-- Estadísticas -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-i18n="hero.projects">Proyectos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label" data-i18n="hero.clients">Clientes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label" data-i18n="hero.years">Años</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label" data-i18n="hero.satisfaction">Satisfacción</div>
+                    </div>
+                </div>
+
+                <!-- Botones CTA -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <span data-i18n="hero.viewProjects">Ver Proyectos</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-large">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        <span data-i18n="hero.hireMe">Contrátame</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagen de perfil -->
+            <div class="hero-image">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="PerfilSCM.jpeg" alt="She Codes MX - Desarrolladora Creativa">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ABOUT ME SECTION                                              -->
+    <!-- ============================================================ -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about-container">
+            <div class="about-image slide-in-left">
+                <div class="about-image-main">
+                    <img src="PerfilSCM.jpeg" alt="She Codes MX trabajando en su computadora">
+                </div>
+                <div class="about-badge">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <span data-i18n="about.experience">5+ Años de Experiencia</span>
+                </div>
+            </div>
+
+            <div class="about-content slide-in-right">
+                <div class="section-header">
+                    <h2 class="section-title" id="about-title" data-i18n="about.title">Sobre Mí</h2>
+                    <p class="section-subtitle" data-i18n="about.subtitle">Conóceme mejor</p>
+                </div>
+
+                <div class="about-text">
+                    <p data-i18n="about.text1">
+                        ¡Hola! Soy She Codes MX, una desarrolladora frontend y mobile creativa enfocada 
+                        en construir experiencias digitales funcionales, visualmente atractivas y centradas en el usuario.
+                    </p>
+                    <p data-i18n="about.text2">
+                        Me especializo en interfaces modernas y aplicaciones móviles, combinando código limpio, 
+                        diseño cuidadoso y animaciones sutiles para crear soluciones significativas. 
+                        Creo firmemente en el aprendizaje continuo y la atención al detalle.
+                    </p>
+                </div>
+
+                <!-- Características -->
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <div>
+                            <h4 data-i18n="about.feature1.title">Código Limpio</h4>
+                            <p data-i18n="about.feature1.desc">Código mantenible y escalable</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <div>
+                            <h4 data-i18n="about.feature2.title">Diseño Responsive</h4>
+                            <p data-i18n="about.feature2.desc">Perfecto en todos los dispositivos</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <div>
+                            <h4 data-i18n="about.feature3.title">Entrega Rápida</h4>
+                            <p data-i18n="about.feature3.desc">Cumplimiento en tiempo y forma</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <div>
+                            <h4 data-i18n="about.feature4.title">Soporte</h4>
+                            <p data-i18n="about.feature4.desc">Comunicación 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-comments" aria-hidden="true"></i>
+                        <span data-i18n="about.contact">Hablemos</span>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        <span data-i18n="about.experienceBtn">Mi Trayectoria</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SERVICES SECTION                                              -->
+    <!-- ============================================================ -->
+    <section id="services" class="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" id="services-title" data-i18n="services.title">Mis Servicios</h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">Soluciones integrales para tus necesidades digitales</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.web.title">Desarrollo Web</h3>
+                    <p data-i18n="services.web.desc">Sitios web y aplicaciones web personalizadas con tecnologías modernas y mejores prácticas.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.web.feature1">Diseño Responsive</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.web.feature2">Optimización de Rendimiento</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.web.feature3">Amigable con SEO</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.web.feature4">Compatible con navegadores</span></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.mobile.title">Desarrollo Mobile</h3>
+                    <p data-i18n="services.mobile.desc">Aplicaciones nativas y multiplataforma para iOS y Android enfocadas en rendimiento y usabilidad.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.mobile.feature1">iOS & Android</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.mobile.feature2">Rendimiento Nativo</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.mobile.feature3">Publicación en App Store</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.mobile.feature4">Notificaciones Push</span></li>
+                    </ul>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="services.uiux.title">Diseño UI/UX</h3>
+                    <p data-i18n="services.uiux.desc">Soluciones de diseño centradas en el usuario que combinan estética y funcionalidad.</p>
+
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.uiux.feature1">Investigación de Usuarios</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.uiux.feature2">Wireframing & Prototipado</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.uiux.feature3">Sistemas de Diseño</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="services.uiux.feature4">Pruebas de Usabilidad</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SKILLS SECTION                                                -->
+    <!-- ============================================================ -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" id="skills-title" data-i18n="skills.title">Habilidades Técnicas</h2>
+                <p class="section-subtitle" data-i18n="skills.subtitle">Tecnologías y herramientas con las que trabajo</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-left">
+                    <!-- Frontend -->
+                    <div class="skills-category fade-in">
+                        <h3><i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="skills.frontend">Desarrollo Frontend</span></h3>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percentage">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript / TypeScript</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Angular</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="skills-category fade-in">
+                        <h3><i class="fas fa-mobile-alt" aria-hidden="true"></i> <span data-i18n="skills.mobile">Desarrollo Mobile</span></h3>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React Native</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Ionic</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-right">
+                    <!-- Backend & Tools -->
+                    <div class="skills-category fade-in">
+                        <h3><i class="fas fa-server" aria-hidden="true"></i> <span data-i18n="skills.backend">Backend & Herramientas</span></h3>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js / Express</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Firebase</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design & Others -->
+                    <div class="skills-category fade-in">
+                        <h3><i class="fas fa-palette" aria-hidden="true"></i> <span data-i18n="skills.design">Diseño & Otros</span></h3>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma / Adobe XD</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">UI / UX Design</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Agile / Scrum</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Resolución de Problemas</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROJECTS SECTION                                              -->
+    <!-- ============================================================ -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" id="projects-title" data-i18n="projects.title">Mis Proyectos</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Muestra de mi mejor trabajo</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="projects-filter fade-in" role="tablist" aria-label="Filtrar proyectos por categoría">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="projects.all">Todos</button>
+                <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" data-i18n="projects.web">Web</button>
+                <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false" data-i18n="projects.mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design" role="tab" aria-selected="false" data-i18n="projects.design">Diseño</button>
+                <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false" data-i18n="projects.ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false" data-i18n="projects.ai">IA/ML</button>
+                <button class="filter-btn" data-filter="blockchain" role="tab" aria-selected="false" data-i18n="projects.blockchain">Blockchain</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- ================================================== -->
+                <!-- PROYECTO 2: Daily Savings Tracker                  -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="mobile finance productivity">
+                    <div class="project-image">
+                        <img src="img/dailySaving/AhorroDiario.png" alt="Daily Savings Tracker - App de ahorro diario" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="2" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary">App Móvil</span>
+                                <span class="badge badge-secondary">Finanzas</span>
+                            </div>
+                            <span class="project-category">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title">Daily Savings Tracker</h3>
+
+                        <p class="project-description" data-i18n="projects.dailySavings.desc">
+                            Aplicación para rastrear ahorros diarios con almacenamiento local y exportación a CSV.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Ionic React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                            <span class="tech-tag">CSV Export</span>
+                            <span class="tech-tag">Mobile UI</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Daily Savings Tracker App"
+                                data-images="img/dailySaving/AhorroDiario.png,img/dailySaving/AhorroDiario1.png,img/dailySaving/AhorroDiario2.png,img/dailySaving/AhorroDiario3.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== -->
+                <!-- PROYECTO 3: Nexus Digital                          -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="web business landing">
+                    <div class="project-image">
+                        <img src="img\NexusDigital\NexusNSP.png" alt="Nexus Digital - Sitio web corporativo" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="3" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary">Web</span>
+                                <span class="badge badge-secondary">Negocios</span>
+                            </div>
+                            <span class="project-category">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title">Nexus Digital</h3>
+
+                        <p class="project-description" data-i18n="projects.nexus.desc">
+                            Sitio web corporativo moderno con diseño responsivo y experiencia de usuario optimizada.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Nexus Digital"
+                                data-images="img/NexusDigita/NexusC.png,img/NexusDigita/NexusDigital2.png,img/NexusDigita/NexusDigital3.png,img/NexusDigita/NexusDigital4.png,img/NexusDigita/NexusDigital5.png,img/NexusDigita/NexusDigital7.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== -->
+                <!-- PROYECTO 4: Barbería Damian                        -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="web business design">
+                    <div class="project-image">
+                        <img src="img/Barberia Damian/Barberia.png" alt="Barbería Damian - Sitio web para barbería" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="5" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary" data-i18n="projects.web">Web</span>
+                                <span class="badge badge-secondary" data-i18n="projects.business">Negocios</span>
+                            </div>
+                            <span class="project-category" data-i18n="projects.featured">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title" data-i18n="projects.barberia.title">Barbería Damian</h3>
+
+                        <p class="project-description" data-i18n="projects.barberia.desc">
+                            Sitio web elegante para barbería con servicios, galería, testimonios, sección de citas y botón de WhatsApp.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">WhatsApp API</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Barbería Damian"
+                                data-images="img/Barberia Damian/Barberia.png,img/Barberia Damian/Barberia2.png,img/Barberia Damian/Barberia3.png,img/Barberia Damian/Barberia4.png,img/Barberia Damian/Barberia5.png,img/Barberia Damian/Barberia6.png,img/Barberia Damian/Barberia7.png,img/Barberia Damian/Barberia8.png,img/Barberia Damian/Barberia9.png,img/Barberia Damian/Barberia10.png,img/Barberia Damian/Barberia11.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== -->
+                <!-- PROYECTO 5: Sonic Revolution                       -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="web ecommerce business">
+                    <div class="project-image">
+                        <img src="img/sonicRevolution/SonicRevolution.png" alt="Sonic Revolution - E-commerce de instrumentos" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="6" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary" data-i18n="projects.web">Web</span>
+                                <span class="badge badge-secondary" data-i18n="projects.ecommerce">E-commerce</span>
+                            </div>
+                            <span class="project-category" data-i18n="projects.featured">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title" data-i18n="projects.sonic.title">Sonic Revolution</h3>
+
+                        <p class="project-description" data-i18n="projects.sonic.desc">
+                            E-commerce moderno para instrumentos musicales con asesoría personalizada y envíos exprés.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Sonic Revolution"
+                                data-images="img/sonicRevolution/SonicRevolution.png,img/sonicRevolution/SonicRevolution2.png,img/sonicRevolution/SonicRevolution3.png,img/sonicRevolution/SonicRevolution4.png,img/sonicRevolution/SonicRevolution5.png,img/sonicRevolution/SonicRevolution6.png,img/sonicRevolution/SonicRevolution7.png,img/sonicRevolution/SonicRevolution8.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== -->
+                <!-- PROYECTO 6: Nexus Audio                            -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="web ecommerce business">
+                    <div class="project-image">
+                        <img src="img/nexusAudio/NexusAudio.png" alt="Nexus Audio - E-commerce futurista" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="7" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary" data-i18n="projects.web">Web</span>
+                                <span class="badge badge-secondary" data-i18n="projects.ecommerce">E-commerce</span>
+                            </div>
+                            <span class="project-category" data-i18n="projects.featured">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title" data-i18n="projects.nexusAudio.title">Nexus Audio</h3>
+
+                        <p class="project-description" data-i18n="projects.nexusAudio.desc">
+                            E-commerce futurista con catálogo moderno y experiencia de carrito de compras optimizada.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Shopping Cart</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Nexus Audio"
+                                data-images="img/nexusAudio/NexusAudio.png,img/nexusAudio/NexusAudio2.png,img/nexusAudio/NexusAudio3.png,img/nexusAudio/NexusAudio4.png,img/nexusAudio/NexusAudio5.png,img/nexusAudio/NexusAudio6.png,img/nexusAudio/NexusAudio7.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================================== -->
+                <!-- PROYECTO 7: Soldadura German                        -->
+                <!-- ================================================== -->
+                <article class="project-card fade-in" data-category="mobile business productivity">
+                    <div class="project-image">
+                        <img src="img/soldaduraGerman/SG.png" alt="Soldadura German - App para negocio de soldadura" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" data-project="8" data-i18n="projects.view">Ver Proyecto</button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div>
+                                <span class="badge badge-primary" data-i18n="projects.mobile">Mobile</span>
+                                <span class="badge badge-secondary" data-i18n="projects.business">Negocios</span>
+                            </div>
+                            <span class="project-category" data-i18n="projects.featured">Destacado</span>
+                        </div>
+
+                        <h3 class="project-title" data-i18n="projects.soldadura.title">Soldadura German</h3>
+
+                        <p class="project-description" data-i18n="projects.soldadura.desc">
+                            App móvil para negocio de soldadura con cotizaciones, modo oscuro y contacto directo.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Ionic React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Responsive UI</span>
+                            <span class="tech-tag">Dark Mode</span>
+                            <span class="tech-tag">Quotation Form</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link open-gallery" data-title="Soldadura German"
+                                data-images="img/soldaduraGerman/SoldaduraGerman.png,img/soldaduraGerman/SoldaduraGerman2.png,img/soldaduraGerman/SoldaduraGerman3.png,img/soldaduraGerman/SoldaduraGerman4.png,img/soldaduraGerman/SoldaduraGerman5.png,img/soldaduraGerman/SoldaduraGerman6.png,img/soldaduraGerman/SoldaduraGerman7.png,img/soldaduraGerman/SoldaduraGerman8.png,img/soldaduraGerman/SoldaduraGerman9.png,img/soldaduraGerman/SoldaduraGerman10.png,img/soldaduraGerman/SoldaduraGerman11.png,img/soldaduraGerman/SoldaduraGerman12.png,img/soldaduraGerman/SoldaduraGerman13.png,img/soldaduraGerman/SoldaduraGerman14.png,img/soldaduraGerman/SoldaduraGerman15.png,img/soldaduraGerman/SoldaduraGerman16.png,img/soldaduraGerman/SoldaduraGerman17.png,img/soldaduraGerman/SoldaduraGerman18.png,img/soldaduraGerman/SoldaduraGerman19.png,img/soldaduraGerman/SoldaduraGerman20.png,img/soldaduraGerman/SoldaduraGerman21.png,img/soldaduraGerman/SoldaduraGerman22.png">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                <span data-i18n="projects.screenshots">Capturas</span>
+                            </a>
+
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span data-i18n="projects.code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN DE PROYECTOS -->
+            </div>
+
+            <div class="text-center fade-in" style="margin-top: 60px;">
+                <a href="#" class="btn btn-primary btn-large">
+                    <i class="fas fa-eye" aria-hidden="true"></i>
+                    <span data-i18n="projects.viewAll">Ver Todos los Proyectos</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- APPROACH SECTION                                              -->
+    <!-- ============================================================ -->
+    <section id="approach" class="approach" aria-labelledby="approach-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" id="approach-title" data-i18n="approach.title">Mi Enfoque</h2>
+                <p class="section-subtitle" data-i18n="approach.subtitle">Cómo trabajo y en qué creo</p>
+            </div>
+
+            <div class="approach-grid">
+                <div class="approach-card fade-in">
+                    <div class="approach-icon">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="approach-title" data-i18n="approach.idea.title">De la Idea a la Realidad</h3>
+                    <p class="approach-description" data-i18n="approach.idea.desc">
+                        Transformo conceptos en soluciones digitales funcionales, enfocándome en las necesidades del usuario y la viabilidad técnica.
+                    </p>
+                </div>
+
+                <div class="approach-card fade-in">
+                    <div class="approach-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="approach-title" data-i18n="approach.collaboration.title">Desarrollo Colaborativo</h3>
+                    <p class="approach-description" data-i18n="approach.collaboration.desc">
+                        Creo en trabajar estrechamente con los clientes, manteniendo una comunicación clara durante todo el proceso.
+                    </p>
+                </div>
+
+                <div class="approach-card fade-in">
+                    <div class="approach-icon">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="approach-title" data-i18n="approach.quality.title">Calidad y Atención al Detalle</h3>
+                    <p class="approach-description" data-i18n="approach.quality.desc">
+                        Cada línea de código importa. Me enfoco en código limpio, mantenible y diseños perfectos al píxel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CONTACT SECTION                                               -->
+    <!-- ============================================================ -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" id="contact-title" data-i18n="contact.title">Ponte en Contacto</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Trabajemos juntos en tu próximo proyecto</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact.email">Correo</h4>
+                            <p>shecodesmx12@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Ubicación -->
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact.location">Ubicación</h4>
+                            <p data-i18n="contact.city">México</p>
+                        </div>
+                    </div>
+
+                    <!-- Disponibilidad -->
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact.availability">Disponibilidad</h4>
+                            <p data-i18n="contact.hours">Lun - Vie, 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="social-links fade-in">
+                        <a href="https://github.com/shecodesmx" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shecodesmx/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@SheCodesMX" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@shecodesmx" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61583937813965" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="contact-form fade-in">
+                        <form id="contactForm" action="https://formsubmit.co/68024c6f9cb3df70ada5ae640e5320df" method="POST">
+                            <!-- Campos ocultos -->
+                            <input type="hidden" name="_subject" value="Nuevo mensaje del portafolio - She Codes MX">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_cc" value="shecodesmx12@gmail.com">
+                            <input type="hidden" name="_autoresponse" value="¡Gracias por tu mensaje! Te responderé en 24 horas.">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://portafolio-ashy-tau.vercel.app/portafolio.html">
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.name">Nombre Completo</label>
+                                <input type="text" name="name" class="form-input" placeholder="Juan Pérez" data-i18n-ph="contact.namePlaceholder" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.email">Correo Electrónico</label>
+                                <input type="email" name="email" class="form-input" placeholder="juan@example.com" data-i18n-ph="contact.emailPlaceholder" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.subject">Asunto</label>
+                                <input type="text" name="_subject" class="form-input" placeholder="Consulta de proyecto" data-i18n-ph="contact.subjectPlaceholder" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.project">Tipo de Proyecto</label>
+                                <select class="form-input" name="project_type" required>
+                                    <option value="" data-i18n="contact.select">Selecciona el tipo</option>
+                                    <option value="web" data-i18n="contact.web">Desarrollo Web</option>
+                                    <option value="mobile" data-i18n="contact.mobile">App Móvil</option>
+                                    <option value="design" data-i18n="contact.design">Diseño UI/UX</option>
+                                    <option value="consulting" data-i18n="contact.consulting">Consultoría</option>
+                                    <option value="other" data-i18n="contact.other">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.budget">Presupuesto Estimado</label>
+                                <select class="form-input" name="budget" id="budgetSelect">
+                                    <option value="" data-i18n="contact.budgetSelect">Selecciona un rango</option>
+                                    <option value="$1,000 - $5,000 MXN" data-i18n="contact.budget1">$1,000 - $5,000 MXN</option>
+                                    <option value="$5,000 - $10,000 MXN" data-i18n="contact.budget2">$5,000 - $10,000 MXN</option>
+                                    <option value="$10,000 - $20,000 MXN" data-i18n="contact.budget3">$10,000 - $20,000 MXN</option>
+                                    <option value="$20,000+ MXN" data-i18n="contact.budget4">$20,000+ MXN</option>
+                                    <option value="other" data-i18n="contact.budgetOther">Otro / Personalizado</option>
+                                </select>
+                            </div>
+
+                            <!-- Presupuesto personalizado -->
+                            <div class="form-group" id="customBudgetContainer" style="display: none;">
+                                <label class="form-label" data-i18n="contact.customBudget">Presupuesto Personalizado</label>
+                                <input type="text" name="custom_budget" class="form-input" placeholder="Ej: $8,500 MXN o Negociable" data-i18n-ph="contact.customBudgetPlaceholder">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" data-i18n="contact.message">Mensaje</label>
+                                <textarea class="form-textarea" name="message" placeholder="Cuéntame sobre tu proyecto..." data-i18n-ph="contact.messagePlaceholder" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                <span data-i18n="contact.send">Enviar Mensaje</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER                                                        -->
+    <!-- ============================================================ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">She Codes MX</div>
+                    <p class="footer-about" data-i18n="footer.about">
+                        Desarrolladora creativa especializada en soluciones frontend y mobile. Apasionada por construir experiencias digitales que marcan la diferencia.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/shecodesmx" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61583937813965" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quickLinks">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.home">Inicio</span></a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.about">Sobre Mí</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.services">Servicios</span></a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="services.web.title">Desarrollo Web</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="services.mobile.title">Desarrollo Mobile</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="services.uiux.title">Diseño UI/UX</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="footer.consulting">Consultoría</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="footer.maintenance">Mantenimiento</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 <strong>She Codes MX</strong>. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- MODAL DE PROYECTOS                                            -->
+    <!-- ============================================================ -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div id="modalContent">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPTS                                                        -->
+    <!-- ============================================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
